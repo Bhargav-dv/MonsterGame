@@ -5,13 +5,7 @@ const normalMonsterAttack = 15;
 const StrongMonsterAttack = 20;
 const healPlayer = 15;
 
-const userEnteredValue = prompt("Enter the health") ;
-
-let choseMaxLife = parseInt(userEnteredValue);
-if(isNaN(choseMaxLife) || choseMaxLife <= 0){
-    alert("You have not entered a valid number \nMonsters are set to default Health")
-    choseMaxLife = 100;
-}
+let choseMaxLife= 100;
 let currentMonsterHealth = choseMaxLife;
 let currentPlayerHealth = choseMaxLife;
 let hasBonusLife = true;
